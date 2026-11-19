@@ -1,15 +1,15 @@
-package Batment;
+package Building;
 
 import Characters.SimulatorCharacter;
 
-public abstract class SimulatorBatment {
+public abstract class SimulatorBuilding {
     private double area;
     private int maxCapacity;
     private Cleanliness cleanliness;
     private int currentCapacity;
     private SimulatorCharacter[] presentCharacters;
 
-    public SimulatorBatment(double area, int maxCapacity, Cleanliness cleanliness) {
+    public SimulatorBuilding(double area, int maxCapacity, Cleanliness cleanliness) {
         this.area = area;
         this.maxCapacity = maxCapacity;
         this.cleanliness = cleanliness;
@@ -79,18 +79,36 @@ public abstract class SimulatorBatment {
         }
     }
 
-    public String showActualCharactersInBatmentAndBatmentInfo() {
-        String result = "Caractéristique du bâtiment : " + area + " m², "
+    public String showActualCharactersInBuildingAndBuildingInfo() {
+        StringBuilder result = new StringBuilder("Caractéristique du bâtiment : " + area + " m², "
                 + currentCapacity + " personne(s) sur " + maxCapacity
-                + ", propreté : " + cleanliness + "\n";
+                + ", propreté : " + cleanliness + "\n");
         for (int i = 0; i < currentCapacity; i++) {
             SimulatorCharacter c = presentCharacters[i];
-            result += " - " + c.getName() + " (" + c.getRace() + "), magie : " + c.getMagic() + "\n";
+            result.append(" - ").append(c.getName()).append(" (").append(c.getRace()).append("), magie : ").append(c.getMagic()).append("\n");
         }
-        return result;
+        return result.toString();
     }
 
     public boolean canBeCleanUp() {
         return cleanliness == Cleanliness.MAUVAIS && currentCapacity == 0;
+    }
+
+    public void cleanUp() {
+        if (!canBeCleanUp()) {
+            System.out.println("Impossible, le bâtiment doit être nettoyer");
+            return;
+        }
+        cleanliness = Cleanliness.BON;
+        System.out.println("Le bâtiment a été nettoyé");
+    }
+
+    public boolean contains(SimulatorCharacter character) {
+        for (int i = 0; i < getCurrentCapacity(); i++) {
+            if (presentCharacters[i] == character) {
+                return true;
+            }
+        }
+        return false;
     }
 }

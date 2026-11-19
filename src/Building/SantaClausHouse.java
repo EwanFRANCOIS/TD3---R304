@@ -1,8 +1,8 @@
-package Batment;
+package Building;
 
 import Characters.SimulatorCharacter;
 
-public class SantaClausHouse extends SimulatorBatment {
+public class SantaClausHouse extends SimulatorBuilding {
 
     public SantaClausHouse(double area, int maxCapacity, Cleanliness cleanliness) {
         super(area, maxCapacity, cleanliness);

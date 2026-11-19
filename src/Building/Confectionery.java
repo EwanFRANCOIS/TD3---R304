@@ -1,12 +1,12 @@
 // permets à tous les personnages de se restaurer
 
-package Batment;
+package Building;
 
 import Characters.SimulatorCharacter;
 import Food.Food;
 import Food.FoodType;
 
-public class Confectionery extends SimulatorBatment {
+public class Confectionery extends SimulatorBuilding {
 
     public Confectionery(double area, int maxCapacity, Cleanliness cleanliness) {
         super(area, maxCapacity, cleanliness);

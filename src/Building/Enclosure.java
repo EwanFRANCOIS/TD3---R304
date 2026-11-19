@@ -1,12 +1,12 @@
 // certains sont ouverts, n’accueille qu’un type de créature à la fois et leur permet
 // de se reposer
 
-package Batment;
+package Building;
 
 import Characters.Creatures.Creature;
 import Characters.SimulatorCharacter;
 
-public class Enclosure extends SimulatorBatment {
+public class Enclosure extends SimulatorBuilding {
 
     private boolean Open;
 

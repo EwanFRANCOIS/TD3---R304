@@ -1,8 +1,8 @@
-package Batment;
+package Building;
 
 import Characters.SimulatorCharacter;
 
-public class StockRooms extends SimulatorBatment {
+public class StockRooms extends SimulatorBuilding {
 
 
     public StockRooms(double area, int maxCapacity, Cleanliness cleanliness) {

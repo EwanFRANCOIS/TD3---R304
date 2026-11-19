@@ -1,9 +1,9 @@
-package Batment;
+package Building;
 
 import Characters.Humanoids.Humanoid;
 import Characters.SimulatorCharacter;
 
-public class Offices extends SimulatorBatment {
+public class Offices extends SimulatorBuilding {
 
     public Offices(double area, int maxCapacity, Cleanliness cleanliness) {
         super(area, maxCapacity, cleanliness);

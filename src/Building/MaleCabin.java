@@ -1,17 +1,17 @@
-package Batment;
+package Building;
 
 import Characters.Humanoids.Humanoid;
 import Characters.SimulatorCharacter;
 
-public class FemaleCabin extends SimulatorBatment {
+public class MaleCabin extends SimulatorBuilding {
 
-    public FemaleCabin(double area, int maxCapacity, Cleanliness cleanliness) {
+    public MaleCabin(double area, int maxCapacity, Cleanliness cleanliness) {
         super(area, maxCapacity, cleanliness);
     }
 
     @Override
     public boolean canAccept(SimulatorCharacter character) {
-        if (character instanceof Humanoid && character.getSexe().equals("Female")) {
+        if (character instanceof Humanoid && character.getSexe().equals("Male")) {
             return true;
         } else {
             return false;
@@ -24,4 +24,5 @@ public class FemaleCabin extends SimulatorBatment {
             charactersPresent[i].sleep();
         }
     }
+
 }

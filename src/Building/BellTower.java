@@ -1,8 +1,8 @@
-package Batment;
+package Building;
 
 import Characters.SimulatorCharacter;
 
-public class BellTower extends SimulatorBatment {
+public class BellTower extends SimulatorBuilding {
 
     private int minutes;
 
@@ -16,9 +16,9 @@ public class BellTower extends SimulatorBatment {
         return false;
     }
 
-    public int countMagicLevel(SimulatorBatment[] buildings) {
+    public int countMagicLevel(SimulatorBuilding[] buildings) {
         int total = 0;
-        for (SimulatorBatment building : buildings) {
+        for (SimulatorBuilding building : buildings) {
             SimulatorCharacter[] characterPresent = building.getPresentCharacters();
             for (int i = 0; i < building.getCurrentCapacity(); i++) {
                 total += characterPresent[i].getMagic();

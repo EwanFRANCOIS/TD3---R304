@@ -1,8 +1,8 @@
-package Batment;
+package Building;
 
 import Characters.SimulatorCharacter;
 
-public class Playground extends SimulatorBatment {
+public class Playground extends SimulatorBuilding {
 
     public Playground(double area, int maxCapacity, Cleanliness cleanliness) {
         super(area, maxCapacity, cleanliness);
