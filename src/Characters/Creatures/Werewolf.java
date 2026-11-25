@@ -3,9 +3,9 @@ package Characters.Creatures;
 import Abilities.Entertainable;
 import Abilities.Worker;
 
-public class Lycanthropes extends Creature implements Worker, Entertainable {
+public class Werewolf extends Creature implements Worker, Entertainable {
 
-    public Lycanthropes(String Name, String Sexe, String Race, int Age, int HungerMeter, boolean TirednessMeter, int Magic) {
+    public Werewolf(String Name, String Sexe, String Race, int Age, int HungerMeter, boolean TirednessMeter, int Magic) {
         super(Name, Sexe, Race, Age, HungerMeter, TirednessMeter, Magic);
     }
 
