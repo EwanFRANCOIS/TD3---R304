@@ -17,6 +17,4 @@ public class Elf extends Humanoid implements Worker {
         System.out.print(getName() + " Le " + getRace() + " Travaille.");
         setMagic(getMagic() + 10);
     }
-
-
 }

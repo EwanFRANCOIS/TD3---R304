@@ -2,9 +2,9 @@ package Characters.Humanoids;
 
 import java.util.Random;
 
-public class LutinFarceur extends Lutin {
+public class MischieviousLutin extends Lutin {
 
-    public LutinFarceur(String Name, String Sexe, String Race, int Age, int HungerMeter, boolean TirednessMeter, int Magic) {
+    public MischieviousLutin(String Name, String Sexe, String Race, int Age, int HungerMeter, boolean TirednessMeter, int Magic) {
         super(Name, Sexe, Race, Age, HungerMeter, TirednessMeter, Magic);
     }
 
