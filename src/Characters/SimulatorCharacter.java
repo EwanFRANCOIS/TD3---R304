@@ -2,6 +2,12 @@ package Characters;
 
 import Food.Food;
 
+/**
+ * @author Ewan FRANCOIS
+ * @class SimulatorCharacter
+ * 
+ */
+
 public class SimulatorCharacter {
 
     // --- VARIABLES ---
