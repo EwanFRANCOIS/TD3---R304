@@ -8,7 +8,7 @@ public class MischieviousLutin extends Lutin {
         super(Name, Sexe, Race, Age, HungerMeter, TirednessMeter, Magic);
     }
 
-    public void doPkank() {
+    public void doPrank() {
         Random randomNumber = new Random();
         System.out.println(" Le lutin farceur fait un prank...");
 
